@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tens pàgina i ningú et troba? — SolutionPartner.AI</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+:root{--bg:#0b1d32;--bg2:#14243a;--bg3:#1b2e4d;--ink:#14243a;--gold:#e7c47d;--line:#c9d4e0;--red:#b91c1c;}
+*{box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#eef1f7;color:var(--ink);margin:0;line-height:1.6;}
+a{color:inherit;text-decoration:none;}
+.hero{background:linear-gradient(135deg,#0b1d32,#14243a 55%,#1b2e4d);color:#fff;padding:56px 24px 64px;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(231,196,125,.22),transparent 65%);}
+.wrap{max-width:1080px;margin:0 auto;position:relative;z-index:2;}
+.brand{display:flex;align-items:center;gap:12px;justify-content:center;margin-bottom:34px;}
+.brand img{height:56px;width:auto;}
+.brand .nm{font-weight:600;letter-spacing:.08em;font-size:1.05rem;}
+.brand .nm span{color:var(--gold);}
+.badge{display:inline-block;background:var(--gold);color:var(--bg);font-weight:800;font-size:.72rem;padding:5px 14px;border-radius:24px;letter-spacing:.05em;margin-bottom:20px;}
+.hero h1{font-size:clamp(1.9rem,4.6vw,3.4rem);font-weight:900;line-height:1.08;margin:.2em auto;letter-spacing:-.01em;max-width:900px;}
+.hero h1 .hl{color:var(--gold);}
+.hero p.lead{font-size:clamp(1rem,1.6vw,1.25rem);color:rgba(255,255,255,.85);max-width:760px;margin:20px auto 8px;}
+.hero p.num{margin-top:0;}
+.hero .num b{color:var(--gold);font-size:clamp(1.1rem,2vw,1.4rem);}
+.cta-bar{display:flex;gap:14px;justify-content:center;margin-top:30px;flex-wrap:wrap;}
+.btn{background:var(--gold);color:var(--bg);padding:15px 34px;font-weight:800;font-size:1.05rem;border-radius:12px;display:inline-block;box-shadow:0 8px 24px rgba(231,196,125,.30);transition:transform .12s;}
+.btn:hover{transform:translateY(-2px);}
+.btn2{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3);padding:15px 30px;font-weight:700;font-size:1rem;border-radius:12px;}
+.pain{background:#fff;padding:56px 24px;border-bottom:1px solid var(--line);}
+.pain .sec-t{color:var(--red);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:800;text-align:center;}
+.pain h2{font-size:clamp(1.5rem,3vw,2.3rem);text-align:center;margin:.3em auto .6em;color:var(--bg);max-width:820px;}
+.pain-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:1080px;margin:30px auto 0;}
+.pcard{background:#fafcff;border:1px solid var(--line);border-radius:16px;padding:26px;}
+.pcard .ic{width:46px;height:46px;border-radius:12px;background:#fdeaea;color:var(--red);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;margin-bottom:14px;}
+.pcard h3{font-size:1.08rem;color:var(--bg);margin:0 0 8px;}
+.pcard .loss{color:var(--red);font-weight:900;font-size:1.5rem;margin:6px 0;}
+.pcard p{color:#4a5a72;font-size:.9rem;margin:0;}
+.sol{background:linear-gradient(135deg,#0b1d32,#1b2e4d);color:#fff;padding:60px 24px;}
+.sol .sec-t{color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:800;text-align:center;}
+.sol h2{font-size:clamp(1.5rem,3vw,2.3rem);text-align:center;margin:.3em auto .4em;max-width:800px;}
+.sol .lead{text-align:center;color:rgba(255,255,255,.85);max-width:760px;margin:0 auto 36px;font-size:1.05rem;}
+.sol .warn{text-align:center;background:rgba(231,196,125,.14);border:1px solid var(--gold);border-radius:12px;color:#fff;max-width:760px;margin:0 auto 36px;padding:16px 22px;font-size:.98rem;}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:1080px;margin:0 auto;}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:24px;}
+.step .n{width:38px;height:38px;border-radius:50%;background:var(--gold);color:var(--bg);display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:14px;font-size:1.1rem;}
+.step h3{font-size:1rem;margin:0 0 8px;color:#fff;}
+.step p{color:rgba(255,255,255,.75);font-size:.9rem;margin:0;}
+.roi{background:#fff;padding:56px 24px;}
+.roi .sec-t{color:var(--bg);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:800;text-align:center;}
+.roi h2{font-size:clamp(1.5rem,3vw,2.2rem);text-align:center;margin:.3em auto .5em;color:var(--bg);}
+.roi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:1080px;margin:24px auto 0;}
+.roi-card{text-align:center;background:#fafcff;border:1px solid var(--line);border-radius:16px;padding:30px 18px;}
+.roi-card .v{font-size:2rem;font-weight:900;color:var(--bg);}
+.roi-card .v span{color:var(--gold);}
+.roi-card .l{color:#5a6a82;font-size:.86rem;margin-top:6px;font-weight:600;}
+.final{background:linear-gradient(135deg,#0b1d32,#1b2e4d);color:#fff;text-align:center;padding:64px 24px;}
+.final h2{font-size:clamp(1.6rem,3.4vw,2.5rem);max-width:800px;margin:.2em auto .5em;}
+.final p{color:rgba(255,255,255,.85);max-width:640px;margin:0 auto 30px;font-size:1.05rem;}
+.final .btn{font-size:1.15rem;padding:17px 40px;}
+footer{background:var(--bg2);color:rgba(255,255,255,.55);text-align:center;padding:22px;font-size:.82rem;}
+.f{margin-bottom:14px;}
+.f label{display:block;font-weight:600;font-size:.9rem;color:#23344d;margin-bottom:6px;}
+.inp{width:100%;padding:12px;border:2px solid var(--line);border-radius:9px;font-size:.95rem;font-family:inherit;}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo.png" alt="SolutionPartner.AI">
+      <div class="nm">AI STRATEGY <span>&amp;</span> AUTOMATION · <span>SolutionPartner</span>.AI</div>
+    </div>
+    <div class="badge">SEO I GEO PER A PÀGINES WEB</div>
+    <h1>Tens una pàgina web... <span class="hl">i ningú et veu.</span></h1>
+    <p class="lead">La tens, la pagues, la mires... però els teus clients no et troben. No surts a Google, no surts a les respostes de la IA, i el teu traspassar és invisible.</p>
+    <p class="num">Els teus clients no busquen a la guia. Busquen a Google i, cada cop més, <b>pregunten directament a la IA</b>. Si no hi ets en cap dels dos llocs, <b>no ets enlloc.</b></p>
+    <div class="cta-bar">
+      <a class="btn" href="#contracte">Descobreix per què no et troben →</a>
+      <a class="btn2" href="#servei">Com ho arreglem</a>
+    </div>
+  </div>
+</section>
+
+<!-- DOLOR -->
+<section class="pain" id="dolor">
+  <div class="wrap">
+    <div class="sec-t">El problema amagat</div>
+    <h2>Una pàgina que ningú troba és com una botiga en un carrer sense sortida</h2>
+    <div class="pain-cards">
+      <div class="pcard">
+        <div class="ic">🔍</div>
+        <h3>No surts a Google</h3>
+        <div class="loss">Pàgina 3+ o inexistent</div>
+        <p>Tens web, però el teu sector ja té competidors ben posicionats. Sense SEO, els clients simplement no arriben mai a creuar-te.</p>
+      </div>
+      <div class="pcard">
+        <div class="ic">🤖</div>
+        <h3>No surts a les respostes d'IA</h3>
+        <div class="loss">Invisible per a ChatGPT</div>
+        <p>Cada cop més gent pregunta a la IA "on trobo un advocat / restaurant / taller prop meu?". Si la teva pàgina no està preparada per respondre aquestes preguntes, la IA recomana els teus competidors.</p>
+      </div>
+      <div class="pcard">
+        <div class="ic">€</div>
+        <h3>Pagues la web "per tenir-la"</h3>
+        <div class="loss">Sense retorn</div>
+        <p>Vas pagar una pàgina perquè et porti clients. Si no et troben, has pagat per una faixa que ningú llegeix.</p>
+      </div>
+      <div class="pcard">
+        <div class="ic">📉</div>
+        <h3>Els competidors t'ho roben</h3>
+        <div class="loss">Cada client que es perd</div>
+        <p>Qui sí té SEO i GEO guanya cada client que es perd el negoci invisible. Cada mes son oportunitats que se'n van amb un altre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCIO -->
+<section class="sol" id="servei">
+  <div class="wrap">
+    <div class="sec-t">La nostra solució</div>
+    <h2>Dos motors perquè et trobin: el clàssic i el que ve</h2>
+    <p class="lead">Fem el doble diagnòstic: com et troba Google (SEO) i com et recomana la IA (GEO). I t'ho deixem tot clar amb les claus per millorar-ho.</p>
+    <div class="warn">⚡ IMPORTANT: el GEO és el que marca la diferència ara. Google i ChatGPT ja generen respostes directes abans que ningú cliqui — guanya qui és citat per la IA, no qui té la web més bonica.</div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Anàlisi SEO</h3><p>Tècnica (velocitat, estructura, textos, paraules clau), competidors i presència real a Google. Veus exactament per què no et troben.</p></div>
+      <div class="step"><div class="n">2</div><h3>Anàlisi GEO</h3><p>Comparteixes a les respostes d'IA: et cita ChatGPT, Google AI Overviews, Perplexity? Veus si les teves pàgines responen a les preguntes reals dels clients.</p></div>
+      <div class="step"><div class="n">3</div><h3>Les claus per millorar</h3><p>Un pla concret: què tocar, quins textos reescriure, quines pàgines crear, què estructurar perquè Google i la IA et trobin.</p></div>
+      <div class="step"><div class="n">4</div><h3>Ho fem nosaltres (opcional)</h3><p>No t'ho deixem a mitges. Si vol, t'apliquem els canvis i et posem a punt perquè comencis a aparèixer.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI -->
+<section class="roi" id="roi">
+  <div class="wrap">
+    <div class="sec-t">El retorn</div>
+    <h2>No és més trànsit: són clients que avui et roba el competidor</h2>
+    <div class="roi-grid">
+      <div class="roi-card"><div class="v">3x</div><div class="l">Més probabilitat que et trobin si estàs preparat per a la IA</div></div>
+      <div class="roi-card"><div class="v">Dia 1</div><div class="l">Reps l'anàlisi clara del per què no et troben</div></div>
+      <div class="roi-card"><div class="v">100<span>%</span></div><div class="l">De les claus accionables, sense tecnicismes</div></div>
+      <div class="roi-card"><div class="v">&gt;2<span>x</span></div><div class="l">El que més rendeix ara: estar present a les respostes d'IA</div></div>
+    </div>
+    <p style="text-align:center;color:#4a5a72;font-size:.9rem;max-width:720px;margin:28px auto 0;">Cada mes que passes invisible, el teu competidor guanya el client que hauria estat teu. L'anàlisi et diu què, i les claus et diuen com.</p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final" id="contracte">
+  <div class="wrap">
+    <h2>Descobreix per què ningú et troba.</h2>
+    <p>Fem la radiografia SEO + GEO de la teva pàgina i t'expliquem el perquè i les claus. Sense compromís.</p>
+    <div class="cta-bar">
+      <a class="btn" href="#rf">Demanar l'anàlisi SEO + GEO →</a>
+      <a class="btn2" href="https://github.io/autodiagnostic-ia">Fes l'autodiagnòstic</a>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD CAPTURE -->
+<section class="pain" id="rf">
+  <div class="wrap" style="max-width:720px;">
+    <div class="sec-t" style="color:var(--bg)">Sense compromís</div>
+    <h2 style="color:var(--bg)">Revisem si et troben</h2>
+    <p style="text-align:center;color:#4a5a72;font-size:.95rem;margin-bottom:24px;">Deixa'ns la teva pàgina i et tornem amb un informe de com et troba Google i la IA (SEO + GEO).</p>
+    <form onsubmit="return capturaLead(event)">
+      <div class="f"><label>Empresa</label><input class="inp" name="empresa" required></div>
+      <div class="f"><label>Persona de contacte</label><input class="inp" name="nom" required></div>
+      <div class="f"><label>URL de la teva pàgina web</label><input class="inp" name="web" type="url" placeholder="https://el-teu-servei.com" required></div>
+      <div class="f"><label>Correu electrònic</label><input class="inp" type="email" name="email" required></div>
+      <button class="btn" type="submit" style="width:100%;margin-top:8px;">Revisar la meva visibilitat →</button>
+      <p style="font-size:.78rem;color:#6a7a92;text-align:center;margin-top:12px;">Dades tractades segons RGPD. Res fora del teu abast.</p>
+    </form>
+    <div id="ok" style="display:none;text-align:center;padding:24px;background:#eaf6ea;border:1px solid #2e7d32;border-radius:14px;margin-top:16px;font-weight:600;color:#2e7d32;">✓ Rebut! Et tornem amb l'anàlisi aviat.</div>
+  </div>
+</section>
+
+<footer>© 2026 SolutionPartner.AI · AI Strategy &amp; Automation · Marquem la diferència important del teu negoci</footer>
+
+<script>
+async function capturaLead(e){e.preventDefault();
+  const f=e.target, d=Object.fromEntries(new FormData(f).entries());
+  d.origen="landing seo-geo"; d.kind="lead";
+  let ok=false;
+  try{const r=await fetch('/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});ok=r.ok;}catch(err){ok=false;}
+  document.getElementById('ok').style.display='block';
+  f.style.display='none';return false;
+}
+</script>
+</body>
+</html>
